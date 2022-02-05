@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+    	http://www.springframework.org/schema/beans/spring-beans.xsd
+    	http://www.springframework.org/schema/context
+    	http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:property-placeholder location="classpath:config.properties"/>
+    <context:component-scan base-package="February.FirstLab"/>
+    
+
+
+<!--    <bean id="somePet"-->
+<!--          class="February.FirstLec.Cat">-->
+
+<!--    </bean>-->
+<!--    <bean id="somePerson"-->
+<!--          class="February.FirstLec.Person"-->
+<!--          scope="prototype"-->
+<!--    >-->
+
+<!--&lt;!&ndash;         <constructor-arg ref="someCat"/>&ndash;&gt;-->
+<!--        <property name="LittleFriend" ref="somePet"/>-->
+<!--        <property name="name" value="gleb"/>-->
+<!--        <property name="age" value="15"/>-->
+
+<!--    </bean>-->
+
+<!--    FirstLab first example of 1 task-->
+<!--    <bean id="someMessage"-->
+<!--          class="February.FirstLab.Message">-->
+<!--        <property name="text" value="${message.text}"/>-->
+<!--    </bean>-->
+<!--    <bean id="printer"-->
+<!--          class="February.FirstLab.Printer">-->
+<!--          <constructor-arg ref="someMessage"/>-->
+<!--    </bean>-->
+    <!--    FirstLab first example of 2 task-->
+<!--    <bean id="SHAAlg"-->
+<!--      class="February.FirstLab.SHA256">-->
+
+<!--    </bean>-->
+
+<!--    <bean id="ETAlg"-->
+<!--          class="February.FirstLab.Ethash">-->
+<!--        <constructor-arg value="${et.range}"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="miner"-->
+<!--          class="February.FirstLab.Miner"-->
+<!--          scope="prototype">-->
+<!--        <constructor-arg ref="${algorithm}"/>-->
+
+<!--    </bean>-->
+
+</beans>
