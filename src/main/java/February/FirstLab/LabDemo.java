@@ -3,6 +3,8 @@ package February.FirstLab;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.Random;
+
 public class LabDemo {
     public static void main(String[] args) {
         //Task 1
@@ -20,9 +22,9 @@ public class LabDemo {
 //        Miner miner = context.getBean("miner",Miner.class);
 //        miner.showSomeInfo();
         // Java Code
-//        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(configForMiner.class);
-//        Miner miner = context.getBean(Miner.class);
-//        miner.showSomeInfo();
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(configForMiner.class);
+        Miner miner = context.getBean(Miner.class);
+        miner.showSomeInfo();
 
     }
 }
